@@ -1,0 +1,378 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug  8 10:20:46 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 04 August 2018 11:36:42
+os: Linux-3.10.0-862.9.1.el7.x86_64 #1 SMP Mon Jul 16 16:29:36 UTC 2018
+nodename: VM_0_4_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/zlgorithmy/website
+writing pidfile to /home/zlgorithmy/website/uwsgi/uwsgi.pid
+detected binary path: /usr/bin/uwsgi
+chdir() to /home/zlgorithmy/website
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uwsgi socket 1 bound to UNIX address /home/zlgorithmy/website/uwsgi/uwsgi.sock fd 4
+Python version: 2.7.5 (default, Jul 13 2018, 13:06:57)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1e20840
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1e20840 pid: 7648 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7648)
+spawned uWSGI worker 1 (pid: 7684, cores: 1)
+spawned uWSGI worker 2 (pid: 7686, cores: 1)
+spawned uWSGI worker 3 (pid: 7687, cores: 1)
+spawned uWSGI worker 4 (pid: 7688, cores: 1)
+spawned uWSGI worker 5 (pid: 7689, cores: 1)
+*** Stats server enabled on /home/zlgorithmy/website/uwsgi/uwsgi.status fd: 19 ***
+[pid: 7684|app: 0|req: 1/1] 36.47.160.21 () {42 vars in 1125 bytes} [Wed Aug  8 02:20:51 2018] GET / => generated 1716 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 7687|app: 0|req: 1/2] 36.47.160.21 () {42 vars in 1125 bytes} [Wed Aug  8 02:20:53 2018] GET / => generated 1716 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 7688|app: 0|req: 1/3] 36.47.160.21 () {42 vars in 1125 bytes} [Wed Aug  8 02:20:54 2018] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 7686|app: 0|req: 1/4] 36.47.160.21 () {42 vars in 1125 bytes} [Wed Aug  8 02:20:54 2018] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /phpfpm_72_status
+[pid: 7689|app: 0|req: 1/5] 127.0.0.1 () {32 vars in 406 bytes} [Wed Aug  8 02:26:10 2018] GET /phpfpm_72_status => generated 1973 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /weixin
+[pid: 7684|app: 0|req: 2/6] 36.47.160.21 () {40 vars in 1103 bytes} [Wed Aug  8 02:27:19 2018] GET /weixin => generated 1947 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /weixin
+[pid: 7687|app: 0|req: 2/7] 36.47.160.21 () {42 vars in 1133 bytes} [Wed Aug  8 02:27:33 2018] GET /weixin => generated 1947 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 7684)...
+Gracefully killing worker 2 (pid: 7686)...
+Gracefully killing worker 3 (pid: 7687)...
+Gracefully killing worker 4 (pid: 7688)...
+Gracefully killing worker 5 (pid: 7689)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/zlgorithmy/website
+closing all non-uwsgi socket fds > 2 (max_fd = 100001)...
+found fd 3 mapped to socket 0 (127.0.0.1:8001)
+found fd 4 mapped to socket 1 (/home/zlgorithmy/website/uwsgi/uwsgi.sock)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /home/zlgorithmy/website/static
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug  8 02:28:01 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 04 August 2018 11:36:42
+os: Linux-3.10.0-862.9.1.el7.x86_64 #1 SMP Mon Jul 16 16:29:36 UTC 2018
+nodename: VM_0_4_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/zlgorithmy/website
+detected binary path: /usr/bin/uwsgi
+chdir() to /home/zlgorithmy/website
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited INET address 127.0.0.1:8001 fd 3
+uwsgi socket 1 inherited UNIX address /home/zlgorithmy/website/uwsgi/uwsgi.sock fd 4
+Python version: 2.7.5 (default, Jul 13 2018, 13:06:57)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x20ea050
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x20ea050 pid: 7648 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 7648)
+spawned uWSGI worker 1 (pid: 8590, cores: 1)
+spawned uWSGI worker 2 (pid: 8591, cores: 1)
+spawned uWSGI worker 3 (pid: 8592, cores: 1)
+spawned uWSGI worker 4 (pid: 8593, cores: 1)
+spawned uWSGI worker 5 (pid: 8594, cores: 1)
+*** Stats server enabled on /home/zlgorithmy/website/uwsgi/uwsgi.status fd: 18 ***
+Internal Server Error: /weixin
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 63, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 81, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 364, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 407, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 400, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./website/urls.py", line 20, in <module>
+    path('weixin/', include('polls.urls')),
+NameError: name 'path' is not defined
+[pid: 8592|app: 0|req: 1/1] 36.47.160.21 () {42 vars in 1133 bytes} [Wed Aug  8 02:28:07 2018] GET /weixin => generated 99484 bytes in 176 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8590)...
+Gracefully killing worker 2 (pid: 8591)...
+Gracefully killing worker 3 (pid: 8592)...
+Gracefully killing worker 4 (pid: 8593)...
+Gracefully killing worker 5 (pid: 8594)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/zlgorithmy/website
+closing all non-uwsgi socket fds > 2 (max_fd = 100001)...
+found fd 3 mapped to socket 0 (127.0.0.1:8001)
+found fd 4 mapped to socket 1 (/home/zlgorithmy/website/uwsgi/uwsgi.sock)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /home/zlgorithmy/website/static
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug  8 02:30:14 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 04 August 2018 11:36:42
+os: Linux-3.10.0-862.9.1.el7.x86_64 #1 SMP Mon Jul 16 16:29:36 UTC 2018
+nodename: VM_0_4_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/zlgorithmy/website
+detected binary path: /usr/bin/uwsgi
+chdir() to /home/zlgorithmy/website
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited INET address 127.0.0.1:8001 fd 3
+uwsgi socket 1 inherited UNIX address /home/zlgorithmy/website/uwsgi/uwsgi.sock fd 4
+Python version: 2.7.5 (default, Jul 13 2018, 13:06:57)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x23ae050
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x23ae050 pid: 7648 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 7648)
+spawned uWSGI worker 1 (pid: 8875, cores: 1)
+spawned uWSGI worker 2 (pid: 8876, cores: 1)
+spawned uWSGI worker 3 (pid: 8877, cores: 1)
+spawned uWSGI worker 4 (pid: 8878, cores: 1)
+spawned uWSGI worker 5 (pid: 8879, cores: 1)
+*** Stats server enabled on /home/zlgorithmy/website/uwsgi/uwsgi.status fd: 18 ***
+Internal Server Error: /weixin
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 63, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 81, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 364, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 407, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 400, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./website/urls.py", line 20, in <module>
+    url(r'^weixin/', include('polls.urls')),
+NameError: name 'include' is not defined
+[pid: 8879|app: 0|req: 1/1] 36.47.160.21 () {42 vars in 1134 bytes} [Wed Aug  8 02:30:17 2018] GET /weixin => generated 99498 bytes in 96 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM WARNING: unix socket /home/zlgorithmy/website/uwsgi/uwsgi.sock changed inode. Skip removal
+VACUUM: unix socket /home/zlgorithmy/website/uwsgi/uwsgi.status (stats) removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Aug  8 10:41:06 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 04 August 2018 11:36:42
+os: Linux-3.10.0-862.9.1.el7.x86_64 #1 SMP Mon Jul 16 16:29:36 UTC 2018
+nodename: VM_0_4_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/zlgorithmy/website
+writing pidfile to /home/zlgorithmy/website/uwsgi/uwsgi.pid
+detected binary path: /usr/bin/uwsgi
+chdir() to /home/zlgorithmy/website
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+uwsgi socket 1 bound to UNIX address /home/zlgorithmy/website/uwsgi/uwsgi.sock fd 4
+Python version: 2.7.5 (default, Jul 13 2018, 13:06:57)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xd4b840
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xd4b840 pid: 10332 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10332)
+spawned uWSGI worker 1 (pid: 10364, cores: 1)
+spawned uWSGI worker 2 (pid: 10365, cores: 1)
+spawned uWSGI worker 3 (pid: 10366, cores: 1)
+spawned uWSGI worker 4 (pid: 10367, cores: 1)
+spawned uWSGI worker 5 (pid: 10368, cores: 1)
+*** Stats server enabled on /home/zlgorithmy/website/uwsgi/uwsgi.status fd: 19 ***
+Internal Server Error: /weixin
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 63, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 81, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 364, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 407, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 400, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./website/urls.py", line 20, in <module>
+    url(r'^weixin/', include('weixin.urls')),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./weixin/urls.py", line 1, in <module>
+    from django.urls import path
+ImportError: cannot import name path
+[pid: 10368|app: 0|req: 1/1] 101.226.233.146 () {34 vars in 637 bytes} [Wed Aug  8 02:41:11 2018] GET /weixin?signature=f70534a9ae35f835df948a2b520f61dc64ed2ade&echostr=3186514952369930055&timestamp=1533696071&nonce=1037293601 => generated 112631 bytes in 100 msecs (HTTP/1.0 500) 1 headers in 63 bytes (1 switches on core 0)
+Internal Server Error: /weixin
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 63, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 81, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 364, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 407, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 400, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./website/urls.py", line 20, in <module>
+    url(r'^weixin/', include('weixin.urls')),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./weixin/urls.py", line 1, in <module>
+    from django.urls import path
+ImportError: cannot import name path
+[pid: 10364|app: 0|req: 1/2] 101.226.233.149 () {34 vars in 635 bytes} [Wed Aug  8 02:41:34 2018] GET /weixin?signature=fd33ed7695490608ff461d0c4e910ee09cf9d33e&echostr=5007442577473929086&timestamp=1533696094&nonce=937916797 => generated 112622 bytes in 93 msecs (HTTP/1.0 500) 1 headers in 63 bytes (1 switches on core 0)
+Internal Server Error: /weixin
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 63, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/lib64/python2.7/site-packages/django/middleware/common.py", line 81, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 158, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 27, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 364, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 407, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/urls/resolvers.py", line 400, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./website/urls.py", line 20, in <module>
+    url(r'^weixin/', include('weixin.urls')),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./weixin/urls.py", line 1, in <module>
+    from django.urls import path
+ImportError: cannot import name path
+[pid: 10365|app: 0|req: 1/3] 36.47.160.21 () {40 vars in 1105 bytes} [Wed Aug  8 02:42:00 2018] GET /weixin => generated 115193 bytes in 98 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/zlgorithmy/website/uwsgi/uwsgi.sock removed.
+VACUUM: unix socket /home/zlgorithmy/website/uwsgi/uwsgi.status (stats) removed.
