@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^weixin', include('weixin.urls')),
+    url(r'', include('mytest.urls')),
     url(r'^admin/', admin.site.urls),
 ]

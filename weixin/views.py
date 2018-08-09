@@ -55,6 +55,7 @@ def index(request):
         if isinstance(recMsg, receive.Msg):
             if recMsg.MsgType == 'text':
                 content = recMsg.Content
+                print('content:'+content)
                 replyMsg = reply.TextMsg(toUser, fromUser, content)
                 return replyMsg.send()
             elif recMsg.MsgType == 'image':
