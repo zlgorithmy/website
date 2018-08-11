@@ -10,5 +10,5 @@ def index(request):
         img.save(buf)
         image_stream = buf.getvalue()
         response = HttpResponse(image_stream,content_type="image/png")
-        return render(request,'mytest/index.html')
+        #return render(request,'mytest/index.html')
         return response

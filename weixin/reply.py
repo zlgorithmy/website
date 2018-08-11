@@ -15,7 +15,7 @@ class TextMsg(Msg):
         self.__dict['ToUserName'] = toUserName
         self.__dict['FromUserName'] = fromUserName
         self.__dict['CreateTime'] = int(time.time())
-        self.__dict['Content'] = content.decode("utf-8")
+        self.__dict['Content'] = content
     def send(self):
         XmlForm = """
         <xml>

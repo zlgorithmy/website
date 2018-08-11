@@ -7,14 +7,15 @@ def parse_xml(web_data):
         return None
     xmlData = ET.fromstring(web_data)
     msg_type = xmlData.find('MsgType').text
-    print('msg_type:'+msg_type)
     if msg_type == 'text':
         return TextMsg(xmlData)
     elif msg_type == 'image':
         return ImageMsg(xmlData)
     elif msg_type == 'event':
-        print('+++++++++++++++++++++++++')
         return EventMsg(xmlData)
+    elif msg_type == 'file':
+        return FileMsg(xmlData)
+    return Msg(xmlData)
 
 class Msg(object):
     def __init__(self, xmlData):
@@ -22,17 +23,28 @@ class Msg(object):
         self.FromUserName = xmlData.find('FromUserName').text
         self.CreateTime = xmlData.find('CreateTime').text
         self.MsgType = xmlData.find('MsgType').text
-        #self.MsgId = xmlData.find('MsgId').text
 
 class TextMsg(Msg):
     def __init__(self, xmlData):
         Msg.__init__(self, xmlData)
-        self.Content = xmlData.find('Content').text.encode("utf-8")
+        self.Content = xmlData.find('Content').text
+        self.MsgId = xmlData.find('MsgId').text
+
+class FileMsg(Msg):
+    def __init__(self, xmlData):
+        Msg.__init__(self, xmlData)
+        self.Title = xmlData.find('Title').text
+        self.Description = xmlData.find('Description').text
+        self.FileKey = xmlData.find('FileKey').text
+        self.FileMd5 = xmlData.find('FileMd5').text
+        self.FileTotalLen = xmlData.find('FileTotalLen').text
+        self.MsgId = xmlData.find('MsgId').text
 
 class ImageMsg(Msg):
     def __init__(self, xmlData):
         Msg.__init__(self, xmlData)
         self.PicUrl = xmlData.find('PicUrl').text
+        self.MsgId = xmlData.find('MsgId').text
         self.MediaId = xmlData.find('MediaId').text
 
 class EventMsg(Msg):

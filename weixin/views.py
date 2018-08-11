@@ -35,37 +35,48 @@ def index(request):
             return HttpResponse('')
 
     elif request.method == "POST":
-        webData = request.body
+        webData = request.body.decode("utf-8")
+        print("")
         print(webData)
+        print("")
         recMsg = receive.parse_xml(webData)
-        fromUserName = recMsg.FromUserName;
-        toUserName = recMsg.ToUserName;
-        createTime = recMsg.CreateTime;
-        msgType = recMsg.MsgType;
-        #msgId = recMsg.MsgId;
-
-        print('fromUserName:'+fromUserName)
-        print('toUserName:'+toUserName)
-        print('createTime:'+createTime)
-        print('msgType:'+msgType)
-        #print('msgId:'+msgId)
-
-        toUser = recMsg.FromUserName
-        fromUser = recMsg.ToUserName
         if isinstance(recMsg, receive.Msg):
+            toUserName = recMsg.ToUserName;
+            fromUserName = recMsg.FromUserName;
+            createTime = recMsg.CreateTime;
+            msgType = recMsg.MsgType;
+            #msgId = recMsg.MsgId;
+
+            toUser = recMsg.FromUserName
+            fromUser = recMsg.ToUserName
+            return reply.TextMsg(toUser, fromUser, msgType).send()
+
+            '''
+            content = {
+                    'text': reply.TextMsg(toUser, fromUser, "text"),
+                    'image': reply.TextMsg(toUser, fromUser, "image"),
+            }.get(msgType, reply.TextMsg(toUser, fromUser, 'Todo...')).send()
+
             if recMsg.MsgType == 'text':
-                content = recMsg.Content
-                print('content:'+content)
-                replyMsg = reply.TextMsg(toUser, fromUser, content)
-                return replyMsg.send()
+                return reply.TextMsg(toUser, fromUser, recMsg.Content).send()
+
             elif recMsg.MsgType == 'image':
-                mediaId = recMsg.MediaId
-                replyMsg = reply.ImageMsg(toUser, fromUser, mediaId)
-                return replyMsg.send()
-            elif recMsg.MsgType == 'event':
-                content = 'event'.encode("utf-8")
+                return reply.ImageMsg(toUser, fromUser, recMsg.MediaId).send()
+
+            elif recMsg.MsgType == 'file':
+                content = 'file'
                 replyMsg = reply.TextMsg(toUser, fromUser, content)
                 return replyMsg.send()
+
+            elif recMsg.MsgType == 'event':
+                content = 'event'
+                replyMsg = reply.TextMsg(toUser, fromUser, content)
+                return replyMsg.send()
+            else:
+                content = 'Todetail'
+                replyMsg = reply.TextMsg(toUser, fromUser, content)
+                return replyMsg.send()
+            '''
         else:
             content = '不懂...'
             replyMsg = reply.TextMsg(toUser, fromUser, content)
